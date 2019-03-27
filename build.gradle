@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'com.mycompany.app.App'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+dependencies {
+    compile "junit:junit:3.8.1"
+}
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+}
