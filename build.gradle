@@ -26,8 +26,7 @@ jib {
     image = 'registry.cosmoplat.com/library/openjdk:8-alpine'
   }
   to {
-    image = 'registry.cosmoplat.com/common/jib-gradle-demo'
-    credHelper = 'osxkeychain'
+    image = 'registry.cosmoplat.com/test/jib-gradle-demo'
     tags = ['tag2', 'latest']
   }
   container {
