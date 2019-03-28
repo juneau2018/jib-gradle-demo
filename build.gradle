@@ -6,9 +6,13 @@ plugins {
 
 mainClassName = 'com.mycompany.app.App'
 
-repositories {
-    mavenLocal()
-    mavenCentral()
+allprojects {
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+        jcenter()
+    }
 }
 dependencies {
     compile "junit:junit:3.8.1"
